@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leandre Road | IT Student and Aspiring Developer</title>
+<meta name="description" content="Portfolio of Leandre Road, a BCom Information Technology student in Johannesburg.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3f6f8;
+    --ink: #17233a;
+    --muted: #4b5a70;
+    --accent: #1f6f8b;
+    --rule: #c9d3dc;
+    --tint: #e3edf2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #101a2b;
+      --ink: #e8eef5;
+      --muted: #a6b4c6;
+      --accent: #6cc3de;
+      --rule: #2c3b53;
+      --tint: #182640;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+  h1, h2, h3 { font-family: "Space Grotesk", system-ui, Arial, sans-serif; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(2.6rem, 8vw, 4.25rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; }
+  h3 { font-size: 1.15rem; font-weight: 500; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-underline-offset: 0.2em; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .intro { font-size: 1.25rem; max-width: 34rem; margin: 1.25rem 0 1.5rem; }
+  .contact { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0; padding: 0; list-style: none; }
+  section { margin-top: 4rem; }
+  .project { border-top: 1px solid var(--rule); padding: 1.25rem 0; }
+  .project:last-child { border-bottom: 1px solid var(--rule); }
+  .project p { color: var(--muted); margin: 0.35rem 0 0.5rem; }
+  .tools { font-size: 0.95rem; color: var(--muted); }
+  .facts { margin: 0; padding: 0; list-style: none; }
+  .facts li { padding: 0.75rem 0; border-top: 1px solid var(--rule); }
+  .facts li:last-child { border-bottom: 1px solid var(--rule); }
+  .facts span { display: block; color: var(--muted); font-size: 0.95rem; }
+  .skills { background: var(--tint); padding: 1.25rem 1.5rem; border-radius: 4px; }
+  .skills p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Leandre Road</h1>
+    <p class="intro">BCom Information Technology student in Johannesburg, building small tools in Python and learning cloud fundamentals.</p>
+    <ul class="contact">
+      <li><a href="mailto:Leandreroad@gmail.com">Leandreroad@gmail.com</a></li>
+      <li><a href="https://linkedin.com/in/leandre-road-102b98340">LinkedIn</a></li>
+      <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+    </ul>
+  </header>
+
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <article class="project">
+      <h3><a href="https://github.com/YOUR-USERNAME/expense-tracker">Expense Tracker</a></h3>
+      <p>A command-line app that logs spending and shows totals by category and month.</p>
+      <div class="tools">Python, CSV files</div>
+    </article>
+    <article class="project">
+      <h3><a href="https://github.com/YOUR-USERNAME/excel-sales-analysis">Excel Sales Analysis</a></h3>
+      <p>A sales workbook that uses formulas and charts to show the best regions, products and months.</p>
+      <div class="tools">Microsoft Excel, SUMIFS, charts</div>
+    </article>
+    <article class="project">
+      <h3><a href="https://github.com/YOUR-USERNAME/network-basics-notes">Network Basics Notes</a></h3>
+      <p>Plain-language notes on how TCP/IP, DNS and DHCP work, with diagrams.</p>
+      <div class="tools">Networking, documentation</div>
+    </article>
+  </section>
+
+  <section aria-labelledby="background">
+    <h2 id="background">Background</h2>
+    <ul class="facts">
+      <li>BCom Information Technology, MANCOSA<span>Expected graduation November 2026</span></li>
+      <li>Vacation Work, Honeywell<span>January to February 2026. Camera configuration, DCS and ESD testing, Ethernet verification</span></li>
+      <li>Access 70 Work Programme<span>Completed June 2026. Hackathon, case studies and workplace-readiness training</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <div class="skills">
+      <p><strong>Programming and web:</strong> Python, HTML, JavaScript</p>
+      <p><strong>Systems and networking:</strong> Windows, Linux, TCP/IP, DNS, DHCP, IT support</p>
+      <p><strong>Business and productivity:</strong> Business analysis, Microsoft Excel, Microsoft Office</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
